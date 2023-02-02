@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Check Browser</title>
+  </head>
+  <body>
+    <img src="google.png" alt="" id="chrome">
+    <img src="firefox.png" alt="" id="firefox">
+    <img src="edge.png" alt="" id="edge">
+    <img src="electron.png" alt="" id="electron">
+    <script>
+      window.onload = () => {
+        const script = document.createElement('script')
+        script.src = 'script.js'
+        document.body.appendChild(script)
+      }
+    </script>
+  </body>
+</html>
